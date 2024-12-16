@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Découvrir l'Europe</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Découvrir l'Europe</a>
+            <button class="navbar-toggler" aria-label="Ouvrir menu burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="astuces.html">Astuces</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section>
+            <header>
+                <h1 class="mb-4">Explorer Nos Destinations</h1>
+            </header>
+            
+
+            <div id="destinationCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/paris.jpg" class="d-block w-100" alt="Paris - Eiffel Tower">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/roma.jpg" class="d-block w-100" alt="Rome - Colosseum">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/london.jpg" class="d-block w-100" alt="London - Tower Bridge">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/barcelona.jpg" class="d-block w-100" alt="Barcelona - City">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/casablanca.jpg" class="d-block w-100" alt="Casablanca - Hassan II Mosque">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/dublin.jpg" class="d-block w-100" alt="Dublin - Road">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/seattle.jpg" class="d-block w-100" alt="Seattle - Space Needle">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev" aria-label="Previous">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next" aria-label="Next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+
+            <section class="mt-4">
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Paris, France</a></h2>
+                    </header>
+                    <p>Explorez la Tour Eiffel, le Louvre et les charmants cafés parisiens.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">“La vie, c'est Paris ! Paris, c'est la vie !”</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Rome, Italie</a></h2>
+                    </header>
+                    <p>Visitez le Colisée, la Chapelle Sixtine et goûtez à la délicieuse cuisine italienne.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">“Tous les chemins mènent à Rome.”</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Londres, <br> Royaume-Uni</a></h2>
+                    </header>
+                    <p>Découvrez l'histoire et la modernité avec le Palais de Buckingham et le London Eye.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"Restez calme et allez à Londres"</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Barcelone, Espagne</a></h2>
+                    </header>
+                    <p>Profitez des plages ensoleillées, de l'architecture de Gaudí et de l'ambiance vibrante de cette ville espagnole.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"Mille parfums et mille couleurs, Barcelone possède mille visages"</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Casablanca, Maroc</a></h2>
+                    </header>
+                    <p>Visitez la magnifique mosquée Hassan II et explorez le mélange de traditions et de modernité de cette ville marocaine.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"Ils sont romanciers, peintres, couturiers…"</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Dublin, Irlande</a></h2>
+                    </header>
+                    <p>Découvrez l'histoire irlandaise à travers la Trinity College Library, et les célèbres pubs de Temple Bar.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"Ils ont vécu, aimé, ri et sont partis"</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+                <article class="destination-box mb-4">
+                    <header>
+                        <h2><a href="">Seattle, États-Unis</a></h2>
+                    </header>
+                    <p>Explorez le Space Needle, et profitez de la beauté naturelle de la région du Puget Sound.</p>
+                    <div class="col-lg-4">
+                        <aside class="sidebar">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"Insomnies à Seattle."</p>
+                            </blockquote>
+                        </aside>
+                    </div>
+                </article>
+
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footerTxt">&copy; 2024 Découvrir l'Europe. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,135 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #c9e6fd;
+    margin: auto;
+    padding-bottom: 100px;
+    overscroll-behavior-y: none;
+}
+
+.navbar {
+    background-color: #0077b6;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.hidden-map {
+    display: none;
+}
+
+.btn-map {
+    background-color: #0077b6;
+    color: white;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    z-index: 0; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 0.625em 0;
+    
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.destination-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.destination-box h2 {
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+.destination-box p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.destination-box a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.destination-box a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote {
+    font-style: italic;
+    color: #0077b6;
+}
+
+img {
+    max-width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+.tip {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tip h2 {
+    color: #0056b3;
+}
+
+
+.tip ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tip ul li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+}
+
+.tip ul li::before {
+    content: "•";
+    color: #318ef8;
+    font-weight: bold;
+    padding-right: 8px;
+}
+@media (max-width: 768px) {
+    .destination-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-lg-4 {
+        margin-top: 20px;
+    }
+}
+
+
+
