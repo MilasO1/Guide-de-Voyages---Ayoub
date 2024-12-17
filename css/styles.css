@@ -37,7 +37,6 @@ footer {
     color: white;
     text-align: center;
     padding: 0.625em 0;
-    
 }
 
 .footer p {
@@ -52,6 +51,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    transition: all 0.6s ease;
+}
+
+.destination-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #f7f7f7; 
 }
 
 .destination-box h2 {
@@ -69,20 +75,33 @@ footer {
     text-decoration: none;
 }
 
-.destination-box a:hover {
-    text-decoration: underline;
+.destination-box:hover a {
+    color: #007bff;  
+    text-decoration: underline; 
 }
 
 .sidebar {
     background-color: #f1f1f1;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 6px black;
 }
 
 .blockquote {
     font-style: italic;
     color: #0077b6;
+}
+
+.destination-box:hover .sidebar blockquote {
+    opacity: 0.8; 
+}
+
+.destination-box header h2 a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.destination-box:hover .sidebar blockquote p {
+    color: #555;  
 }
 
 img {
@@ -93,16 +112,28 @@ img {
 
 .tip {
     background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
     padding: 20px;
+    border-radius: 8px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip:hover {
+    transform: scale(1.05);
+    background-color: #eef2f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tip h2 {
     color: #0056b3;
+    transition: color 0.3s ease;
 }
 
+.tip:hover h2 {
+    color: #007bff; 
+}
 
 .tip ul {
     list-style-type: none;
@@ -120,6 +151,23 @@ img {
     font-weight: bold;
     padding-right: 8px;
 }
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#formMessage {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .destination-box {
         flex-direction: column;
